@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lung Disease Prediction</title>
+</head>
+
+<body>
+
+<h2>Lung Disease Prediction System</h2>
+
+<form action="/predict" method="post">
+
+Age <input type="number" name="age"><br><br>
+
+Smoking (0-No,1-Yes)
+<input type="number" name="smoking"><br><br>
+
+Pollution (0-No,1-Yes)
+<input type="number" name="pollution"><br><br>
+
+Cough (0-No,1-Yes)
+<input type="number" name="cough"><br><br>
+
+Breath Problem (0-No,1-Yes)
+<input type="number" name="breath"><br><br>
+
+Chest Pain (0-No,1-Yes)
+<input type="number" name="pain"><br><br>
+
+Fatigue (0-No,1-Yes)
+<input type="number" name="fatigue"><br><br>
+
+Wheezing (0-No,1-Yes)
+<input type="number" name="wheezing"><br><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+<h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
